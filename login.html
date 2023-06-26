@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="website icon"href="./images/letter-y-logo-or-symbol-icon-vector-4877600-removebg-preview.png">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="container">
+        <div class="body-title">
+            <div class="title-page">
+                <span>Youhana</span>
+            </div>
+            <div class="title-login">
+                <h4>Sign Up</h4>
+                <span>Don't have an account? Create your account Now</span>
+            </div>
+            <div class="input-login">
+                <div class="inputs">
+                    <label>Full Name</label>
+                    <input id="name" type="text" placeholder="Enter your name">
+                </div>
+                <div class="inputs">
+                    <label>Email address</label>
+                    <input id="email" type="text" placeholder="Enter your email">
+                </div>
+                <div class="inputs">
+                    <label>Password</label>
+                    <input id="password" type="password" placeholder="Enter your password">
+                </div>
+                <div class="inputs">
+                    <span><input type="checkbox">I accept <span class="check">Term and Conditions</span></span>
+                </div>
+            </div>
+            <div class="button" onclick="Sign_in()">
+                <button>Sign Up</button>
+            </div>
+        </div>
+        <div class="end-regis">
+            <span>Aleardy have account?<span class="speacial-regis">Log In</span></span>
+        </div>
+        <div class="copy-rigth">
+            <span>2023 &copy; Youhana</span>
+        </div>
+    </div>
+    <script>
+        function Sign_in(){
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var password = $('#password').val();
+            if(name == "youhana gergis helmy mesiha" && email == "youhanagergis02@gmail.com" && password == "123"){
+                window.location.assign("file:///E:/big%20dashboard/login%20sign%20in/index.html");
+                alert("information successfuly");
+            }else{
+                alert("Invalid information");
+                return;
+            }
+        }
+    </script>
+</body>
+</html>

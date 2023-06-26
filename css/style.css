@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-family: "Nunito",sans-serif;
+    --color-text: #6c757d;
+}
+body{
+    background: #fafbfe;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    padding: 0 20px;
+    flex-direction: column;
+}
+.body-title{
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+    box-shadow: rgb(145 158 171 / 20%) 0px 5px 5px -3px, rgb(145 158 171 / 14%) 0px 8px 10px 1px, rgb(145 158 171 / 12%) 0px 3px 14px 2px;
+}
+.title-page{
+    text-align: center;
+    padding: 30px;
+    background: rgb(54,136,252);
+    border-radius:6px 6px 0px 0px;
+    font-size: 18px;
+    color: #fff;
+}
+.title-login{
+    text-align: center;
+    color: var(--color-text);
+    padding: 30px;
+}
+.title-login h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+.inputs label{
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+.inputs input{
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+.inputs span .check{
+    color: var(--color-text);
+}
+.pass{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pass span{
+    font-size: 13px;
+    color: var(--color-text);
+    cursor: pointer;
+}
+.button{
+    text-align: center;
+}
+.button button{
+    position: relative;
+    color: #19aae6;
+    background: #ffffff;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 16px 24px;
+    margin: 20px;
+    border: 2px solid #19aae6;
+    border-radius: 8px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.button button::before{
+    content: "";
+    position: absolute;
+    background: #19aae6;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+    z-index: -1;
+}
+.button button:hover{
+    color: #ffffff;
+}
+.button button::before{
+    top: 100%;
+    left: 100%;
+    transition: 0.7s;
+}
+.button button:hover::before{
+    top: -30px;
+    left: -30px;
+}
+
+.link-signUp{
+color: var(--color-text);
+padding:20px 0;
+}
+.link-signUp span .special-sign{
+    color: #585c5f;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.copy-rigth{
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    color: var(--color-text);
+}
